@@ -1,6 +1,8 @@
 #Strip Jack Naked:
 
-Example usage is below:
+PHP based solver for the Strip Jack Naked card game. Example usage is below.
+
+```php
 
 $loader = require(__DIR__ . '/vendor/autoload.php');
 
