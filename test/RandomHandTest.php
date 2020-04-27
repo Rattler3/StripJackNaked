@@ -1,8 +1,11 @@
 <?php
 
+namespace Test\StripJackNaked;
+
+use PHPUnit\Framework\TestCase;
 use StripJackNaked\RandomHandGenerator;
 
-class RandomHandTest extends PHPUnit_Framework_TestCase
+class RandomHandTest extends TestCase
 {
 
     public function testHand(){

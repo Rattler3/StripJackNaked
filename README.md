@@ -1,4 +1,4 @@
-#Strip Jack Naked:
+# Strip Jack Naked:
 
 PHP based solver for the Strip Jack Naked card game. Example usage is below.
 
@@ -24,7 +24,9 @@ try {
 }
 
 $time = microtime(true) - $start;
-echo "Winner - ".$stripJackNaked->getWinningPlayer()."\n";
-echo "Ran in ".number_format($time, 5)."ms\n";
-echo "Turns - ".$stripJackNaked->getTurns()."\n";
-echo "Tricks - ".$stripJackNaked->getTricks()."\n";
+echo "Hand A - ". $stripJackNaked->getStartHandA().PHP_EOL;
+echo "Hand B - ". $stripJackNaked->getStartHandB().PHP_EOL;
+echo "Winner - ".$stripJackNaked->getWinningPlayer().PHP_EOL;
+echo "Ran in ".number_format($time, 5)."ms".PHP_EOL;
+echo "Turns - ".$stripJackNaked->getTurns().PHP_EOL;
+echo "Tricks - ".$stripJackNaked->getTricks().PHP_EOL;

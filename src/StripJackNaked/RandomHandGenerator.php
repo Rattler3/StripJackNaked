@@ -9,23 +9,16 @@ class RandomHandGenerator{
      */
     const AVAIL_CARDS = '------------------------------------AAAAJJJJKKKKQQQQ';
 
-    /**
-     * @var string
-     */
-    private $handA;
-    /**
-     * @var string
-     */
-    private $handB;
+    private string $handA;
 
-    public function __construct(){
+    private string $handB;
+
+    public function __construct()
+    {
         $this->shuffle();
     }
 
-    /**
-     * @return array
-     */
-    public function shuffle()
+    public function shuffle(): void
     {
         $cards = str_split(RandomHandGenerator::AVAIL_CARDS);
         shuffle($cards);
@@ -34,22 +27,13 @@ class RandomHandGenerator{
         $this->handB = implode($cards[1]);
     }
 
-    /**
-     * @return string
-     */
-    public function getHandB()
+    public function getHandB(): string
     {
         return $this->handB;
     }
 
-    /**
-     * @return string
-     */
-    public function getHandA()
+    public function getHandA(): string
     {
         return $this->handA;
     }
-
-
-
 }

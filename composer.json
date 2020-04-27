@@ -1,18 +1,26 @@
 {
-    "name": "rattler/strip-jack-naked",
-    "description": "PHP based solver for Strip Jack Naked card game",
-    "authors": [
-      {
-        "name": "Rattler3",
-        "email": "jamesrattue@hotmail.co.uk"
-      }
-    ],
-    "require-dev": {
-      "phpunit/phpunit": "~4.7"
-    },
-    "autoload": {
-      "psr-0": {
-        "StripJackNaked\\": ""
-      }
+  "name": "jrattue/strip-jack-naked",
+  "description": "PHP based solver for Strip Jack Naked card game",
+  "authors": [
+    {
+      "name": "jrattue",
+      "email": "jamesrattue@hotmail.co.uk"
     }
+  ],
+  "require": {
+    "php": "^7.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Test\\StripJackNaked\\": "tests/"
+    }
+  }
 }
